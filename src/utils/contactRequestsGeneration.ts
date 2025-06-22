@@ -43,7 +43,7 @@ Example:
   return prompt;
 }
 
-async function generateUsers(count = 5): Promise<GeneratedContactRequest[]> {
+async function generateContacts(count = 5): Promise<GeneratedContactRequest[]> {
   const result = await ai.models.generateContent({
     model: model,
     contents: buildPrompt(count),
@@ -74,4 +74,4 @@ async function generateUsers(count = 5): Promise<GeneratedContactRequest[]> {
   return contacts;
 }
 
-export default generateUsers;
+export default generateContacts;

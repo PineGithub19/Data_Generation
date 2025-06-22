@@ -9,7 +9,7 @@ import { GeneratedUser } from 'src/utils/types';
 export default class MainSeeder implements Seeder {
   public async run(dataSource: DataSource): Promise<any> {
     let remainingUsers = 500;
-    let remainingContacts = 0;
+    let remainingContacts = 500;
     const standardLength = 50;
     let existingEmails: Set<string> = new Set();
 
